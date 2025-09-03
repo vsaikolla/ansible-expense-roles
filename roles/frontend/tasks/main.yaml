@@ -6,7 +6,7 @@
 - name: start and enable nginx
   ansible.builtin.service:
     name: nginx
-    state: latest
+    state: started
     enabled: yes 
 
 - name: remove existing directory
