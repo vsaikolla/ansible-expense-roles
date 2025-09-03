@@ -1,0 +1,4 @@
+login_user: root
+login_host: db.sainath.online
+login_password: ExpenseAppp@1
+DB_HOST: db.sainath.online
