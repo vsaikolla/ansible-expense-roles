@@ -6,7 +6,7 @@
 - name: start and enable nginx
   ansible.builtin.service:
     name: nginx
-    state: started
+    state: latest
     enabled: yes 
 
 - name: remove existing directory
@@ -24,7 +24,7 @@
     src: https://expense-builds.s3.us-east-1.amazonaws.com/expense-frontend-v2.zip
     dest: /usr/share/nginx/html
     remote_src: yes
-    
+
 - name: copy expense conf
   ansible.builtin.template:
     src: expense.conf.j2
